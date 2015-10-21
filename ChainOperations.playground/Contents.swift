@@ -9,6 +9,8 @@
 import UIKit
 import XCPlayground
 
+XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
+
 extension CollectionType where Generator.Element == NSOperation {
 
     func chainDependencies() {
@@ -20,8 +22,6 @@ extension CollectionType where Generator.Element == NSOperation {
     }
     
 }
-
-XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
 
 // Usage
 
